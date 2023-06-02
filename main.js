@@ -1,5 +1,5 @@
 // makes lissteners for menu <li> click, open site for any
-
+// localStorage.setItem("tooltipOff");
 
 // audio control
 const audiobar = document.getElementById("audiobar");
@@ -32,10 +32,28 @@ function moveToSection(e) {
      section[e].scrollIntoView()
 }
 
-// remove tooltip when click
-const tooltip = document.getElementById('audio-description');
-tooltip.addEventListener('click', function handleClick(e) {
-     tooltip.style.display = "none";
-     document.getElementById('controlAudio').style.height = "40px";
-     tooltip.removeEventListener;
-});
+// // remove tooltip when click
+// const tooltip = document.getElementById('audio-description');
+// tooltip.addEventListener('click', function handleClick(e) {
+//      if(localStorage.getItem("tooltipOff") != "true") {
+//           tooltip.style.display = "none";
+//           document.getElementById('controlAudio').style.height = "40px";
+//           localStorage.setItem("tooltipOff", true);
+//           tooltip.removeEventListener;
+//      }
+// });
+
+// zrób funkcję która sprawdza czy tooltipOff jest true or false
+// jeżeli false wrzuć do html diva z id audio-description
+
+// add to website audio tooltip
+function checkTooltipOff() {
+     // if(localStorage.getItem("tooltipOff") != "true") {
+          let audioTooltip = document.createElement("div");
+          audioTooltip.innerHTML = "*nastrojowy efekt*";
+          audioTooltip.id = "audio-description";
+          document.getElementById("controlAudio").appendChild(audioTooltip);
+     // }
+     // console.log(localStorage.getItem("tooltipOff"));
+}
+checkTooltipOff();
