@@ -57,3 +57,26 @@ function checkTooltipOff() {
      // console.log(localStorage.getItem("tooltipOff"));
 }
 checkTooltipOff();
+
+// add icons to before section of tags
+// -------------------------------------------------------- !to delete!
+// function addIcons() {
+//      const pTag = document.getElementsByClassName("pTag");
+//      let pTagBefore = window.getComputedStyle(pTag[0], "::before");
+     
+//      for(let i = 0; i < pTag.length; i++) {
+//           // console.log("ptag: ", pTagBefore.style.backgroundImage);
+//           if(pTag.innerHTML == "JS") {
+//                pTagBefore.style.backgroundImage = "url(images/java-script.png)";
+//           } else if(pTag.innerText == "PHP") {
+//                pTagBefore.style.backgroundImage = "url(images/php.png)";
+//           } else if(pTag.innerHTML == "React") {
+//                pTagBefore.style.backgroundImage = "url(images/react.png)";
+//           } else if(pTag.innerHTML == "Node" || pTag.innerHTML == "Node.js") {
+//                pTagBefore.style.backgroundImage = "url(images/node-js.png)";
+//           } else if(pTag.innerHTML == "abcd") {
+//                pTagBefore.style.backgroundImage = "url(images/java-script.png)";
+//           }
+//      }
+// }
+// addIcons();

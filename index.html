@@ -1,114 +1,148 @@
 <!DOCTYPE html>
 <html lang="lp-PL">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Łukasz Grynbaum CV</title>
 
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="effects.css" />
-    <link rel="stylesheet" href="projectsStyles.css" />
-    <!-- <link rel="icon" href="icon.png"> -->
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <nav class="menu">
-      <ul>
-        <li onclick="moveToSection(0)">PROJEKTY</li>
-        <li onclick="moveToSection(1)">PLANY?</li>
-        <!-- thinking what put here -->
-        <li onclick="moveToSection(2)">KONTAKT</li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Łukasz Grynbaum CV</title>
 
-    <div class="container">
-      <div class="informationContainer">
-        <p class="info-name">Łukasz Grynbaum</p>
-        <p class="info-specialisation">
-          Junior Fullstack <span class="p-distriction"> Dev</span>eloper
-        </p>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="effects.css" />
+  <link rel="stylesheet" href="projectsStyles.css" />
+  <!-- <link rel="icon" href="icon.png"> -->
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <nav class="menu">
+    <ul>
+      <li onclick="moveToSection(0)">PROJEKTY</li>
+      <li onclick="moveToSection(1)">PLANY?</li>
+      <!-- thinking what put here -->
+      <li onclick="moveToSection(2)">KONTAKT</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="informationContainer">
+      <p class="info-name">Łukasz Grynbaum</p>
+      <p class="info-specialisation">
+        Junior Fullstack <span class="p-distriction"> Dev</span>eloper
+      </p>
+    </div>
+
+    <div class="spaceBar">Od czego się zaczęło</div>
+    <p>
+      Moją pierwszą stycznością z kodem było jako 10-latek wycinanie fragmentów
+      kodu ze stron i wklejanie ich do notatnika by następnie sprawdzać i
+      bawić się działaniem wybranego elementu. Uwielbiam wyzwania zaczynając
+      od trudnych gier pokroju Darkest Dungeon czy Dark Souls III, kończąc na
+      pisaniu szachów jako pierwszego projektu JS (który przy okazji był
+      zarazem pierwszą stycznością z tym językiem).
+    </p>
+    <div class="spaceBar">Dlaczego programowanie?</div>
+    <p>
+      Prawdziwe programowanie zaczęło się w gimnazjum, rozpoczynając
+      eksperymentowanie z tworzeniem prostych stron przy pomocy HTML głównie z
+      pomocą tabel, jednak prawdziwa przygoda rozpoczęła się przy poznaniu C++
+      który do tej pory sprawia mi radość. Docelowo chciałbym brać udział w
+      tworzeniu lub samemu napisać grę 2.5D lub 3D (na jednej się nie skończy 😉).
+    </p>
+
+    <div class="clearfix"></div>
+    <div class="timeline">
+      <ol>
+        <li><span>C++</span></li>
+        <li><span>Pascal</span></li>
+        <li><span>HTML</span></li>
+        <li><span>CSS</span></li>
+        <li><span>Javascript</span></li>
+        <li><span>SQL</span></li>
+        <li><span>PHP</span></li>
+        <li class="active"><span>React/ Vue.JS</span></li>
+        <li><span>Laravel</span></li>
+        <li><span>Game engine</span></li>
+      </ol>
+    </div>
+
+    <div class="spaceBar">Projekty</div>
+    <!-- <p style="padding-bottom: 50px;">
+      Moim pierwszym projektem w javascripcie były szachy, nad którymi nadal
+      pracuję w wolnej chwili - rozwijają się wraz ze mną. <br /><br />
+      Kolejnym projektem jest MyMess pisany w javascripcie i php. Zakończony
+    </p> -->
+    <article>
+      <div class="projectWrapper">
+        <img src="images/chess.avif"></img>
+        <div class="projectTittle" style="color: rgb(13, 146, 13)">Chess</div>
+        <div class="projectTags">
+          <div class="pTag Js">JS</div>
+          <div class="pTag Php">PHP</div>
+        </div>
+        <div class="projectDescriptions">Mój pierwszy projekt web. Docelowo ma posiadać dwa tryby: multiplayer oraz solo przeciwko AI, które zamierzam sam zaprojektować.<br />Rozwija się wraz ze mną.
+        </div>
+        <button onClick='location="https://grylix22.github.io/chess-js/"'>Otwórz</button>
       </div>
 
-      <div class="spaceBar">Od czego się zaczęło</div>
-      <p>
-        Moją pierwszą stycznością z kodem było jako 10-latek wycinanie fragmentów
-        kodu ze stron i wklejanie ich do notatnika by następnie sprawdzać i
-        bawić się działaniem wybranego elementu. Uwielbiam wyzwania zaczynając
-        od trudnych gier pokroju Darkest Dungeon czy Dark Souls III, kończąc na
-        pisaniu szachów jako pierwszego projektu JS (który przy okazji był
-        zarazem pierwszą stycznością z tym językiem).
-      </p>
-      <div class="spaceBar">Dlaczego programowanie?</div>
-      <p>
-        Prawdziwe programowanie zaczęło się w gimnazjum, rozpoczynając
-        eksperymentowanie z tworzeniem prostych stron przy pomocy HTML głównie z
-        pomocą tabel, jednak prawdziwa przygoda rozpoczęła się przy poznaniu C++
-        który do tej pory sprawia mi radość. Docelowo chciałbym brać udział w
-        tworzeniu lub samemu napisać grę 2.5D lub 3D (na jednej się nie skończy 😉).
-      </p>
 
-      <div class="clearfix"></div>
-      <div class="timeline">
-        <ol>
-          <li><span>C++</span></li>
-          <li><span>Pascal</span></li>
-          <li><span>HTML</span></li>
-          <li><span>CSS</span></li>
-          <li><span>Javascript</span></li>
-          <li><span>SQL</span></li>
-          <li><span>PHP</span></li>
-          <li class="active"><span>React/ Vue.JS</span></li>
-          <li><span>Laravel</span></li>
-          <li><span>Game engine</span></li>
-        </ol>
+      <div class="projectWrapper">
+        <img src="images/myMess.webp"></img>
+        <div class="projectTittle" style="color: rgb(53, 53, 202)">MyMess</div>
+        <div class="projectTags">
+          <div class="pTag Js">JS</div>
+          <div class="pTag Php">PHP</div>
+        </div>
+        <div class="projectDescriptions">Drugi projekt. Jest to nie dokładna kopia messengera. Projekt ten sprawił mi tyle samo satysfakcji co wywołania SQL przez PHP irytacji.<br /> Jest prawie gotowy. Brakuje mu kilku szlifów.</div>
+        <button onClick='location=""'>Otwórz</button>
+      </div>  
+
+
+      <div class="projectWrapper">
+        <img></img>
+        <div class="projectTittle" style="color: rgb(81, 170, 158)">Character <s>Poke</s>dex</div>
+        <div class="projectTags">
+          <div class="pTag React">React</div>
+          <div class="pTag Node">Node.js</div>
+        </div>
+        <div class="projectDescriptions">Trzeci projekt. Będzie zawierał listę bazowaną na słynnym pokedexie postaci z gry Darkest Dungeon. W fazie wstępnej.</div>
+        <button style="background-color: #808080;border: 0; cursor: default;">Otwórz</button>
       </div>
 
-      <div class="spaceBar">Projekty</div>
-      <p style="padding-bottom: 50px;">
-        Moim pierwszym projektem w javascripcie były szachy, nad którymi nadal
-        pracuję w wolnej chwili - rozwijają się wraz ze mną. <br /><br />
-        Kolejnym projektem jest MyMess pisany w javascripcie i php. Zakończony
-      </p>
-      <article>
-        <div class="projectWrapper">
-            <img></img>
-            <div class="projectTittle" style="color: rgb(13, 146, 13)">Chess</div>
-            <div class="projectTags">
-              <div class="pTag">JS</div>
-              <div class="pTag">PHP</div>
-            </div>
-            <div class="projectDescriptions"></div>
-            <button href="https://grylix22.github.io/chess-js/">Otwórz</button>
+      
+      <div class="projectWrapper">
+        <img></img>
+        <div class="projectTittle" style="color: rgb(53, 53, 202)">???</div>
+        <div class="projectTags">
+          <!-- <div class="pTag"></div>
+          <div class="pTag"></div> -->
         </div>
+        <div class="projectDescriptions">Miejsce na przyszły projekt.</div>
+        <button style="background-color: #808080;border: 0; cursor: default;">Otwórz</button>
+      </div>
+    </article>
 
-        <div class="projectWrapper">
-            <img></img>
-            <div class="projectTittle" style="color: rgb(53, 53, 202)">MyMess</div>
-            <div class="projectTags">
-              <div class="pTag">JS</div>
-              <div class="pTag">PHP</div>
-            </div>
-            <div class="projectDescriptions">Drugi projekt.</div>
-            <button>Otwórz</button>
+
+    <!-- <div class="spaceBar">Przyszłe projekty</div>
+    <p style="padding-bottom: 50px;">
+
+    </p> -->
+
+    <div class="spaceBar">Kontakt</div>
+    <!-- icon phone
+         icon linkedin
+         icon  -->
+         <div class="contactContainer">
+         <div class="contactIcon"></div>
+         Linkedin
         </div>
-</article>
+    <div style="height: 400px"></div>
+    </p>
 
 
-      <div class="spaceBar">Przyszłe projekty</div>
-      <p style="padding-bottom: 50px;">
-        
-      </p>
+  </div>
+  <div id="controlAudio">
+  </div>
+</body>
 
-      <div class="spaceBar">Kontakt</div>
-      <p style="padding-bottom: 50px;">
-        <div style="height: 400px"></div>
-      </p>
-
-    </div>
-    <div id="controlAudio">
-      <!-- <div id="audio-description">włącz nastrój</div> -->
-    </div>
-    <!-- decided to remove rain sound on mobile -->
-  </body>
 </html>

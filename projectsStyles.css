@@ -1,34 +1,47 @@
 article {
      display: flex;
      flex-wrap: wrap;
-     gap: 3%;
+     gap: 2%;
+     row-gap: 20px;
      align-items: center;
      align-content: center; //space-between
+     margin: 0 10px;
 }
 
 .projectWrapper {
      display: flex;
+     position: relative;
      flex-direction: column;
-     flex-wrap: wrap;
+     flex-wrap: nowrap;
      align-items: center;
      align-content: center;
-     height: 500px;
+     padding-bottom: 10px;
+     height: 700px;
      width: 350px;
      border: 2px solid red;
 }
 
+.projectWrapper:hover {
+     background-color: #1f2225;
+     /* cursor: pointer; */
+}
+
 .projectWrapper > img {
-     max-height: 300px;
-     max-width: 200px;
+     height: 350px;
+     max-width: 350px;
 }
 
 .projectTittle {
+     margin: 10px 0;
      font-size: 1.47em;
      text-shadow: #000000 0.1em 0.1em 0.2em;
 }
 
+
+
 .projectTags {
      display: inline-flex;
+     justify-content: center;
      font-size: 16px;
      width: 300px;
      gap: 10px;
@@ -37,6 +50,8 @@ article {
 }
 
 .pTag {
+     display: flex;
+     position: relative;
      padding: 5px 7px;
      width: fit-content;
      font-size: medium;
@@ -44,19 +59,75 @@ article {
      border-radius: 12px;
 }
 
-.projectDescriptions {
-     font-size: 1em;
-     font-weight: 200;
+.Js::before {
+     content: '';
+     position: relative;
+     top: 1.5px;
+     left: -1px;
+     height: 16px;
+     width: 16px;
+     background-image: url(images/java-script.png);
+     background-repeat: no-repeat;
 }
+
+.Php::before {
+     content: '';
+     position: relative;
+     top: 1.5px;
+     left: -2px;
+     height: 16px;
+     width: 16px;
+     background-image: url(images/php.png);
+     background-repeat: no-repeat;
+}
+
+.React::before {
+     content: '';
+     position: relative;
+     top: 1.5px;
+     left: -1px;
+     height: 16px;
+     width: 16px;
+     background-image: url(images/react.png);
+     background-repeat: no-repeat;
+}
+
+.Node::before {
+     content: '';
+     position: relative;
+     top: 1.5px;
+     left: -1px;
+     height: 16px;
+     width: 16px;
+     background-image: url(images/node-js.png);
+     background-repeat: no-repeat;
+}
+
+
+
+.projectDescriptions {
+     padding: 3px 10px;
+     font-size: 0.87em;
+     font-weight: 200;
+     text-align: center;
+}
+
+/* maybe project status? like :before content: 'Status: ' and like for chess "in progress" */
 
 .projectWrapper > button {
      display: flex;
      justify-content: center;
      align-items: center;
-     height: 30px;
-     width: 100px;
-     font-size: large;
+     position: absolute;
+     margin-top: 10px;
+     bottom: 15px;
+     height: 40px;
+     width: 150px;
+     font-size: 1.47rem;
      font-weight: 700;
-     background-color: brown;
+     background-color: #a52a2a;
      border: 1px solid rgb(126, 30, 30);
+     border-radius: 1em;
+     cursor: pointer;
 }
+   
